@@ -23,7 +23,7 @@ int main(){
     cin>>gra1.tytul; 
     
     
-	  cout<<"Podaj ocene:"<<endl;
+    cout<<"Podaj ocene:"<<endl;
     cin>>gra1.ocena;
     
     
@@ -48,8 +48,7 @@ int main(){
     cout<<"Podaj tytul:"<<endl;
     cin>>gra2.tytul;
     
-    
-	  cout<<"Podaj ocene:"<<endl;
+    cout<<"Podaj ocene:"<<endl;
     cin>>gra2.ocena;
     
     
