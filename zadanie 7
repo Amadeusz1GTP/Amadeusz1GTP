@@ -1,0 +1,47 @@
+# Amadeusz1GTP
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+int a = 0;
+int b = [1000];
+
+int main()
+
+
+{
+        ifstream wejscie;
+        ofstream wyjscie;
+        wejscie.open("a.txt");
+        wyjscie.open("a.json");
+        
+        string line;
+        if (wejscie.good()) {
+            wyjscie<<;
+            while  (!wejscie.eof())
+			 {
+                wejscie >> b[a++];
+                }
+            while (a!=-1) 
+			{
+					
+                    wyjscie << " ";
+
+                    if(!wejscie.eof())
+					{
+                        wyjscie << ",";
+
+                    }
+        {
+            wyjscie<<"]";
+        }
+
+        wejscie.close();
+        
+        wyjscie.close();
+        
+        system("PAUSE");
+        
+        return 0;
+
+}
