@@ -1,0 +1,53 @@
+#include <iostream>
+#include <windows.h>
+#include <time.h>
+#include <stdio.h>
+#include <cstdlib>
+
+using namespace std;
+int cyferki [6];
+int random ;
+int main()
+{
+
+
+    for(int i=0; i<6; i++)
+    {
+        cout<<"Podaj liczbe nr "<<i+1<<": ";
+        cin>>cyferki[i];
+    }
+    system("cls");
+    for(int i=1; i>=0 ;i--)
+    {
+        cout<<"Beben maszyny losujacej jest pusty: "<<i;
+        Sleep(1000);
+    system("cls");
+    }
+    system("cls");
+    for(int i=5; i>=0 ;i--)
+    {
+        cout<<"Nastepuje zwolnienie blokady: "<<i;
+        Sleep(1000);
+    system("cls");
+    }
+
+    cout<<"Wylosowane liczby to:"<<endl;
+    Sleep(1000);
+    srand(time(NULL));
+    for (int i=1; i<=6; i++)
+    {
+
+        random=rand()%49+1;
+        cout<<"Liczba nr "<<i<<": "<<random<<endl;
+        Sleep(750);
+    }
+
+    cout<<""<<endl;
+    cout<<"Podane przez Ciebie liczby to:"<<endl;
+    for (int i=0; i<6; i++)
+    {
+        cout<<"Liczba nr "<<i+1<<": "<<cyferki[i]<<endl;
+    }
+    return 0;
+}
+
