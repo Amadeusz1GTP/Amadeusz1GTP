@@ -1,0 +1,30 @@
+// to zadanie zrobilem juz dawno ,daje panu inne biblioteki ale po to zeby sleep byl poprwany 
+// to zadanie zrobilem juz dawno ,daje panu inne biblioteki ale po to zeby sleep byl poprwany
+
+#include <iostream>
+#include <windows.h>
+#include <time.h>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+    int liczba;
+
+
+    system ("cls");
+    cout << "Witaj kamracie w losowaniu multi Rudnika, losowanie nastapi juz za moment" << endl;
+    Sleep(2000);
+    srand(time(NULL));
+    for(int i=1;i<=6;i++)
+    {
+    liczba = rand()%59+1;
+    Sleep(1000);
+    cout << liczba << endl;
+    }
+
+
+    return 0;
+}
+
+
