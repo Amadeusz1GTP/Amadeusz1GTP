@@ -1,0 +1,50 @@
+#include <iostream>
+#include <fstream>
+#include <stdlib.h>
+#include <ctime>
+#include <string> 
+
+
+using namespace std;
+
+int t[100];
+int ilosc=0;
+int max;
+int a=0;
+int main() {
+
+	
+ifstream wejscie;
+	
+ofstream wyjscie;
+
+wejscie.open("liczby1.txt");
+	
+wyjscie.open("liczby2.txt");
+	
+while(wejscie.good()) {
+                if (!wejscie.eof()) {
+                	
+                    wejscie >> t[ilosc];
+					ilosc++;
+                }
+            }
+			
+			
+			
+			while(tak==true){
+				
+	            for (int i=0;i <=ilosc-1;i++ ){
+	            	
+	            	if (t[i]<=t[i+1])
+	            		
+					else
+					{
+				    t[i]=t[i+1];
+					}
+
+		 max = t[ilosc];
+		wyjscie << "{\"max\":"<<max<<",\"losowa_liczba\":"<<rand()%max<<"}";
+			
+	return 0;
+}
