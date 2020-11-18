@@ -1,0 +1,24 @@
+#include<iostream>
+#include<bitset>
+using namespace std;
+int main(){
+
+
+    int kolor = 0x12345678;
+    cout<<hex<<"jego red wynosi: "<<(kolor & 0x00ff0000)<<endl;
+    kolor = kolor >>= 16;
+
+    cout<<hex<<" blue wynosi: "<<(kolor & 0x0000ff00)<<endl;
+    cout << " przezroczystosc wynosi: " << (kolor & 0x000000) << endl;
+
+    cout<<hex<<" green wynosi: "<<(kolor & 0x000000ff)<<endl;
+
+    cout<<dec<<" red wynosi: "<<(kolor & 0x00ff0000)<<endl;
+
+    cout<<dec<<" blue wynosi: "<<(kolor & 0x0000ff00)<<endl;
+
+    cout<<dec<<" green wynosi: "<<(kolor & 0x000000ff)<<endl;
+    kolor = kolor >>= 16;
+
+    return 0;
+}
