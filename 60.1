@@ -1,0 +1,51 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+
+class files {
+   ifstream fileIn;
+   ofstream fileOut;
+  public:
+   files(); //otwarcie plików obu
+   ~files();
+   void loop();
+};
+files::files()
+{
+   fileIn.open("liczby.txt");
+   fileOut.open("wynik.txt");
+   // tu można dodać 
+   if (!fileIn.good())
+     cerr << "Error fileIn not exists!!!!\n";
+   if (!fileOut.good())
+     cerr << "Error cannot create fileOut!!!\n";
+}
+
+files::~files()
+{
+   fileIn.close();
+   fileOut.close();
+}
+
+void files::loop()
+{
+	int u;
+if (u<1000)
+    do
+    {
+        fileIn.open("liczby.txt");
+        fileOut.open("wynik.txt");
+    } 
+	while( u <= 1000);
+
+ //pętla WHILE do pliku fileIn
+}
+
+int main()
+{
+  files dane;
+  dane.loop();
+  return 1;
+}
