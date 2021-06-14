@@ -1,0 +1,27 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cstdlib>
+
+using namespace std; 
+ 
+int main(int argc, char** argv) {
+	ofstream wyp;
+	wyp.open("wyniki.txt");
+    const int n = 40;
+ 	long int f1 = 1, f2 = 1, f;
+ 	for (int i = 3; i <= n; i++) {
+ 		f = f1 + f2;
+ 		f1 = f2;
+ 		f2 = f;
+ 		if (i%10 == 0) {
+			cout << f ;
+			char str_f[300];
+			itoa(f,str_f,2);
+			cout << "\n" << str_f << endl;
+			//
+			wyp << "\n" << str_f;
+		}
+	} 
+    return 0;
+} 
