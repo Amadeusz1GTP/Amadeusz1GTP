@@ -15,14 +15,14 @@ int main(int argc, char** argv)
 
 	srand(time(NULL));
 
-	for (int i=1;i<=6;i++)
+	for (int i=1;i<=1;i++)
 	{
-		liczba = rand()%49+1;
+		liczba = rand()%999+1;
 		cout<<liczba<<"\a"<<endl;
 
 	}
 
-	cout<<"jesli trafiles te liczby to wygrales 100000000 $";
+	cout<<"jesli trafiles to wygrales 100000000 $";
 
 
 
