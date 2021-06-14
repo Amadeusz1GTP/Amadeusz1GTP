@@ -20,11 +20,11 @@ int main()
 	std::cin>>liczbaY;
     
 
-	std::cout<<"Wybierz działanie : 1.dodawanie";
-  std::cout<<"Wybierz działanie : 2.odejmowanie";
-  std::cout<<"Wybierz działanie : 3.mnozenie";
-  std::cout<<"Wybierz działanie : 4.dzielenie";
-  std::cout<<"Wybierz działanie : 5.reszta z dzielenia ";
+  std::cout<<"Wybierz działanie : 1.dodawanie";
+  std::cout<<" 2.odejmowanie";
+  std::cout<<" 3.mnozenie";
+  std::cout<<" 4.dzielenie";
+  std::cout<<" 5.reszta z dzielenia ";
     
 
 	std::cin>>kalkulator;
