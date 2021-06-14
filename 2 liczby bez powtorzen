@@ -1,0 +1,56 @@
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <cstdio>
+ 
+using namespace std;
+ 
+int sprawdz(int T, int i, int liczba[]){
+    int j;
+    for(j=0; j<i; ++j){
+        if(T == liczba[j]){
+            T = rand() % 3;
+            T = sprawdz(T,i,liczba);
+        }
+    }
+    return T;
+}
+ 
+void wczytaj(int tab[]){
+    int i;
+    printf("podaj 3 rozne liczby\n");
+    for(i=0; i<3; ++i){
+        scanf("%d",&tab[i]);
+    }
+}
+ 
+void losowanie(int liczba[]){
+    int i,T;
+    for(i=0; i<2; ++i){
+        T = rand() % 3;
+        T = sprawdz(T,i,liczba);
+        liczba[i]=T;
+    }
+}
+ 
+void wypisz(int tab[], int liczba[]){
+    int i;
+    printf("wylosowane liczby\n");
+    for(i=0; i<2; ++i){
+        printf("%d ",tab[liczba[i]]);
+    }
+}
+ 
+int main(){
+ 
+    int liczba[2];
+    srand(time(NULL));
+    int tab[3];
+ 
+    wczytaj(tab);
+    losowanie(liczba);
+    wypisz(tab,liczba);
+ 
+    return 0;
+}
