@@ -5,7 +5,7 @@ using namespace std;
 void lr(int x, int y)
 {
      char A[x] = { 'a', 'b', 'c' };
-    cout << A[x] << " -> " << A[y] << endl;
+    cout << A[x] << " " << A[y] << endl;
 }
 
 void hanoi(int n, int a, int b, int c)
