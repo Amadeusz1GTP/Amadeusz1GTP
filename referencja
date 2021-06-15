@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+void dodaj (int&ref) 
+    { 
+    ref +=10;
+    }
+    
+int main ()
+{
+
+    int a = 10; 
+    dodaj (a); 
+    cout << a << endl; 
+
+return 0;
+
+}
