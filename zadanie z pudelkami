@@ -1,0 +1,60 @@
+#include <iostream>
+
+int main()
+{
+    int a=1;
+    int b=1;
+    int c=1;
+    int d=1;
+    int e=1;
+    bool x=0;
+
+    do
+    {
+        do
+        {
+        if ( b > 3 )
+        {
+            b=1;
+            a++;
+            break;
+        }
+
+        if ( c > 3 )
+        {
+            c=1;
+            b++;
+            break;
+        }
+
+        if ( d > 3 )
+        {
+            d=1;
+            c++;
+            break;
+        }
+
+        if ( e > 3 )
+        {
+            e=1;
+            d++;
+            break;
+        }
+
+        if ( a == 4)
+        {
+            x=1;
+            continue;
+        }
+        std::cout << a << " ";
+        std::cout << b << " ";
+        std::cout << c << " ";
+
+        std::cout << d << " ";
+        std::cout << e << " " << std::endl;
+        e++;
+        } while ( x != 1 );
+    } while ( x != 1 );
+
+    return 0;
+}
