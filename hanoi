@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+void lr(int x, int y)
+{
+     char A[x] = { 'a', 'b', 'c' };
+    cout << A[x] << " -> " << A[y] << endl;
+}
+
+void hanoi(int n, int a, int b, int c)
+{
+    if (n > 1) hanoi(n - 1, a, c, b);\
+    
+    lr(a, c);
+    if (n > 1) hanoi(n - 1, b, a, c);
+}
+
+int main()
+{
+    int n;
+    cout << "Wieże Hanoi: ";
+    cin >> n;
+    if (n > 0)
+        hanoi(n, 0, 1, 2);
+    
+    return 0;
+}
