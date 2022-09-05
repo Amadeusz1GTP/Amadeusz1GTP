@@ -1,0 +1,65 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include <iostream>
+
+
+using namespace std;
+int liczba;
+int x;
+int y;
+
+
+int main(int argc, char *argv[]) 
+{
+	{
+    double liczba;
+    //printf("menu\n")
+    //printf("1.zaokraglanie\n")
+    //printf("2.szesnastkowy\n")
+    //printf("3.zerowy\n")
+    //printf("4.koniec\n")
+
+
+    scanf("%lf", &liczba);
+    printf("%lf", zaokraglanie(liczba));
+    return 0;
+}
+	printf("Wybierz:\n 1  \n 2 \n 3  \n 4 \n :");
+	
+	cin>>a;
+	
+	printf("Podaj liczbe\n");
+	
+	cin>>b;
+	
+	switch(a){
+		
+	    case 1:
+	    printf("Zaokraglij; %.2f \n", y);
+	    break;
+	    
+	    case 2:
+	    printf("System szesnastkowy: %x \n",y);
+	    break;
+	    
+	    case 3:
+	    printf("zerowy: %06d \n", y);
+	    break;
+	    
+	    case 4:
+	    printf("koniec");
+	    break;
+	   
+	}
+	
+	
+	
+	return 0;
+}
