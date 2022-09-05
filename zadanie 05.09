@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	
 	cin>>y;
 	
-	switch(a){
+	switch(x){
 		
 	    case 1:
 	    printf("Zaokraglij; %.2f \n", y);
