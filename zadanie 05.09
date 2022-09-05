@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+using namespace std;
+
+int x;
+int y;
+int main(int argc, char *argv[]) 
+{
+	
+	printf("Wybierz:\n 1  \n 2  \n 3  \n 4  \n :");
+	
+	cin>>x;
+	
+	printf("Podaj liczbe\n");
+	
+	cin>>y;
+	
+	switch(a){
+		
+	    case 1:
+	    printf("Zaokraglij; %.2f \n", y);
+	    break;
+	    
+	    case 2:
+	    printf("System szesnastkowy: %x \n",y);
+	    break;
+	    
+	    case 3:
+	    printf("Zera: %06d \n", y);
+	    break;
+	    
+	    case 4:
+	    printf("koniec");
+	    break;
+	   
+	}
+	
+	
+	return 0;
+}
